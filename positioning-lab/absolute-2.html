@@ -1,68 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Positioning Lab</title>
-  <style type="text/css">
-    /* ---------------Box Sizing----------------- */
-    html {
-      box-sizing: border-box;
-    }
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
-    body {
-      background-color: #ECECEC;
-      font-weight: bold;
-      font-family: Tahoma, Geneva, sans-serif;
-      color: #FFF;
-      text-align: center;
-      line-height: 24px;
-    }
-    #wrapper {
-      background-color: #FFF;
-      border: 1px solid #c0c0c0;
-      width: 800px;
-      margin-right: auto;
-      margin-left: auto;
-      text-shadow: 2px 2px #000;
-    }
-    #navy {
-      background-color: #001f3f;
-    }
-    #teal {
-      background-color: #39CCCC;
-    }
-    #blue {
-      background-color: #0074D9;
-    }
-    #aqua {
-      background-color: #7FDBFF;
-    }
-    #footer {
-      background-color: #666;
-    }
-    h1 {
-      color: #000;
-      font-weight: normal;
-      padding: 50px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squares in Corners with Footer</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .corner-square {
+    width: 100px;
+    height: 100px;
+    background-color:aqua
+  }
+
+  .top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .footer {
+    width: 70px;
+    height: 70px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+  }
+</style>
 </head>
 <body>
-  <h1>Absolute 2</h1>
-  <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
-    <div id="footer">Footer</div>
-  </section>
-</body>
 
+<div class="container">
+  <div class="corner-square top-left"></div>
+  <div class="corner-square top-right"></div>
+  <div class="corner-square bottom-left"></div>
+  <div class="corner-square bottom-right"></div>
+
+  <div class="footer">Footer</div>
+</div>
+
+</body>
 </html>
+
+
