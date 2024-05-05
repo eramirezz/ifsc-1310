@@ -1,0 +1,507 @@
+/* ----CSS DEMO---- */
+
+
+body{
+  background-color:#E6E6E6;
+  }
+  /*  ---------------Box Sizing-----------------  */
+  
+  
+  html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  
+  /*  --------------- Responsive Images -----------------  */
+  
+  
+  
+  
+  img{
+  max-width:100%;
+  }
+  
+  
+  
+  
+  /*  --------------- Utility Classes -----------------  */
+  
+  
+  .container{
+  max-width: 960px;
+  width:80vw;
+  margin:40px auto;
+  }
+  
+  
+  .img-right{
+  float:right;
+  margin: 10px 0 10px 20px;
+  border:4px solid #f0edf4;
+  padding:5px;
+  border-radius:20px;
+  background-color: #0635f0;
+  }
+  
+  
+  .img-left{
+  float:left;
+  margin: 10px 20px 10px 0;
+  border:1px solid #95b4e1;
+  padding:5px;
+  border-radius:50px;
+  }
+  
+  
+  .img-center{
+  display:block;
+  margin:20px auto;
+  border:5px solid #0c063f;
+  padding:5px;
+  border-radius:50px;
+  }
+  
+  
+  
+  
+  /*  --------------- Global Styles -----------------  */
+  
+  
+  body {
+    font-family: "Ubuntu Sans Mono", monospace;
+    margin: 0;
+   
+    /*background-image:url("../img/SpaceX-Logo\ \(1\).png")*/
+  }
+  header.primary {
+    background-color: #82a7f0;
+    background-image:url("../img/stars2.jpg");
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 6px 6qx #0f0bf5;
+    padding: 100px;
+  }
+  header.primary h1 {
+    font-size: 4rem;
+    margin: 20px 0 0;
+  }
+  header.primary h1 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  header.primary h2 {
+    margin: 0;
+    font-size: 2 rem;
+  }
+  header.primary nav {
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  header.primary ul {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header.primary ul li {
+    list-style-type: none;
+  }
+  header.primary nav a {
+    color: #fff;
+    text-decoration: none;
+    background-color:#040438(0, 0, 0, 0.4);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 2px solid #0f0bf5;
+    transition: 0.3s;
+  }
+  
+  
+  header.primary nav a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  #content{
+    line-height:1.5;
+    }
+  
+  
+  #content h2{
+  color:#051556;
+  border-bottom:1px dotted #04134f;
+  }
+  
+  #content h3{
+   border-left: 2px solid #04134f;
+   padding:7.5px;
+  }
+  
+  
+  #blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:2rem;
+  border-bottom:1px dotted #04134f;
+  padding: 2rem 0;
+  border-top:1px dotted #04134f;
+  flex-wrap:wrap;
+  }
+  
+  
+  #blog h2 {
+  flex:0 0 100%;
+  margin:0;
+  text-align:center;
+  }
+  
+  
+  #blog .post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.8);
+  padding: 10px;
+  border-radius:4px;
+  font-size:.8rem;
+  transition:.5s;
+  flex:1;
+  border-bottom:1px dotted #04134f;
+  }
+  #blog figure{
+  margin:0;
+  }
+  
+  
+  #blog figcaption{
+  text-transform:uppercase;
+  font-size:.6rem;
+  text-align:center;
+  color:cadetblue;
+  }
+  
+  
+  #blog header{
+  padding-top:10px;
+  font-size:.6rem;
+  color:cadetblue;
+  }
+  
+  
+  #blog header h2{
+  margin:0;
+  }
+  #blog a{
+  color:rgb(17, 4, 97);
+  }
+  
+  
+  #blog .post:hover{
+  box-shadow: 0 8px 16px #000(0,0,0,.6);
+  }
+  
+  
+  #practice h2{
+  color:#2f2feb;
+  border-bottom: 1px solid #9a9aa8;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  table{  
+  border: 4px solid #030329;
+  width: 100%;
+  margin:20px 0;
+  border-collapse:collapse;
+  }
+  
+  
+  caption{
+  font-weight:bold;
+  margin:10px;
+  }
+  
+  
+  th{
+  background-color: #0c2aa3;
+  color:#ffffff;
+  padding:8px;
+  }
+  tr:nth-child(even){
+  background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  tr:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  td:nth-child(n+2){
+  text-align:right;
+  }
+  
+  
+  td{
+  border:2px solid #1934a1;
+  padding:5px;
+  }
+  
+  
+  
+  
+  #practice ol{
+  list-style-type:lower-decimal;
+  }
+  
+  
+  #practice ul ul{
+  list-style-type:square;
+  }
+  
+  
+  dl dt {
+  font-weight:bold;
+  }
+  
+  
+  dl dd{
+  margin:0;
+  }
+  
+  
+  dd + dt{
+  margin-top:1rem;
+  }
+  
+  img{
+  
+    border: 5px double #0A122A;
+    width: 500px;
+   
+  
+     
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+    }
+    
+  #practice blockquote{
+  border: 1px double #000;
+  padding: 20px 20px;
+  margin: 20px 40px;
+  border-radius: 10px 0;
+  background-color: #0A122A;
+  color: #ffffff;
+  line-height: 1.2;
+  text-shadow: 1px 1px #000;
+  }
+  
+  
+  #practice blockquote cite{
+  display:block;
+  text-align:right;
+  font-size:.7rem;
+  margin-top:1rem;
+  }
+  
+  
+  
+  
+  aside[role="complementary"]{
+  background-color: #070a18;
+  color:#ffffff;
+  padding:1.5rem;
+  }
+  
+  
+  aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:80px;
+  }
+  
+  
+  aside .container a{
+    color:#ffffff;
+  }
+  
+  
+  aside .container a:last-of-type{
+  display:block;
+  text-align:right;
+  margin-top: 1rem;
+  border-bottom:1px dotted #04134f;
+  }
+  
+  
+  aside .widget footer{
+  display:none;
+  }
+  
+  
+  footer#colophon {
+    background-color: #121518;
+  }
+  
+  
+    #colophon{
+      background-color: #3b7bda;
+      background-image:url("../img/stars2.jpg");
+      text-align:center;
+      padding:20px;
+      color:#ffffff;
+      font-size:1.1rem;
+    
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+  }
+  
+  #colophon h6 a:link,
+  #colophon h6 a:visited {
+    color: #fff;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 600px){
+    header.primary ul {
+      flex-direction: column;
+      gap:20px;
+      max-width: 250px;
+      margin: auto;
+    }
+  
+  
+    header primary nav a{
+      display:block;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 600px){
+    header.primary ul {
+      flex-direction: column;
+      gap:20px;
+      max-width: 250px;
+      margin: auto;
+    }
+  
+  
+    header primary nav a{
+      display:block;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
